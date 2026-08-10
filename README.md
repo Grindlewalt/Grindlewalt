@@ -1,22 +1,31 @@
 <!--
-═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════
   HOW TO USE THIS FILE
 
-  Everything inside <!-- --> is a prompt for you and is invisible
-  when GitHub renders the page. Write your answer underneath each
-  prompt, then delete the prompt block.
+  Every commented block is a prompt for you, and none of it shows
+  up when GitHub renders the page. Write your answer underneath a
+  prompt, then delete the prompt.
 
   Goes in: github.com/Grindlewalt/Grindlewalt  ->  README.md
-  Put header.svg in the root of that same repo.
+  Also commit header-dark.svg and header-light.svg to that repo root.
 
-  Two rules that apply to every section:
+  Two rules for every section:
   1. No em dashes. Commas, periods, or parentheses.
   2. Nothing claims to be finished that isn't.
-═══════════════════════════════════════════════════════════════════
+
+  One warning, learned the hard way: never type the two-character
+  comment-closing sequence inside a comment. HTML comments cannot
+  nest, so it ends the block early and the rest of your prompt text
+  renders as visible page content.
+═══════════════════════════════════════════════════════════════
 -->
 
 <div align="center">
-  <img src="./header.svg" alt="Grant Rindal">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./header-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./header-light.svg">
+    <img src="./header-dark.svg" alt="Grant Rindal">
+  </picture>
 </div>
 
 <div align="center">
@@ -27,46 +36,40 @@
 
 <!--
   LINKS ROW
-  Left as plain text links on purpose. Resist adding shields.io
-  badges here. A row of colored badges is the single most common
-  profile README pattern and it reads as decoration, which is the
-  opposite of the impression you want.
+  Plain text links on purpose. Resist adding shields.io badges. A
+  row of colored badges is the most common profile README pattern
+  there is, and it reads as decoration.
 
-  Two decisions to make:
+  Two things to handle:
   - Your LinkedIn URL has a random number suffix. Change it under
-    Edit public profile & URL to /in/grantrindal if it's free.
-    Do that before you paste the link here.
-  - Email: leave it off. A mailto in a public README is scraped
-    within days and none of the obfuscation you're building for the
-    site works in Markdown. Point people at the site instead.
+    "Edit public profile and URL" to /in/grantrindal if it's free,
+    then update the link above.
+  - Email: leave it off. A mailto in a public README gets scraped
+    within days, and none of the obfuscation you are building for
+    the site works in Markdown. Send people to the site.
 -->
 
 ---
 
-## <!-- WRITE: a section heading. "About", "What I do", or drop the heading and let the paragraph stand alone. -->
+## About
 
 <!--
-  THE OPENING PARAGRAPH
-  Three to five sentences. The most-read text on the page and the
-  only part most visitors will finish.
+  THREE TO FIVE SENTENCES. The most-read text on the page.
 
-  Answer these, in your own voice, without listing them as answers:
-  - What do you build? Be concrete. Not "AI and security" but the
-    actual thing.
+  Answer these in your own voice, without listing them as answers:
+  - What do you build? Concrete, not "AI and security."
   - What is the through-line connecting agentic AI, the homelab,
     robotics, and the security work? There is one. Name it.
-  - What makes your setup unusual? (Everything runs on hardware you
-    own. Most people your age, and most people generally, are
-    renting someone else's.)
+  - What makes your setup unusual? Everything runs on hardware you
+    own. Most people are renting someone else's.
 
   Traps:
-  - Do not open with "I'm a 16-year-old..." Let the work land
-    first. The age is in the Education line and it is a bonus once
-    someone is impressed, not a frame to view the work through.
+  - Do not open with your age. Let the work land first. The age is
+    a bonus once someone is impressed, not a frame for the work.
   - No "passionate about." No "aspiring." You are not aspiring to
     build things, you are building them.
-  - Write the sentence you would say out loud to someone at a
-    meetup who asked what you're working on.
+  - Write the sentence you would actually say out loud if someone
+    at a meetup asked what you are working on.
 -->
 
 ---
@@ -74,65 +77,75 @@
 ## Projects
 
 <!--
-  Four entries. For each one, three lines:
+  Four entries, three lines each:
+
     **[Name](repo link)** - one sentence on what it is
-    A second sentence on why it exists or what's interesting about it
+    A second sentence on why it exists or what is interesting
     `Status: ...`
 
-  The "why it exists" line is what separates this from a repo list
-  that GitHub already shows below. If you can't answer why a project
-  exists, it probably shouldn't be pinned.
+  The "why it exists" line is what separates this from the repo
+  list GitHub already renders below. If you cannot answer why a
+  project exists, it should not be pinned.
 
-  Status must be accurate. Options: in progress, running,
-  published, archived, design stage. If a project is mid-rebuild,
-  say mid-rebuild.
+  Status has to be accurate: in progress, running, published,
+  archived, design stage.
 -->
 
 **[Jarvis v3](https://github.com/Grindlewalt/Jarvis-but-its-secure)**
+
 <!--
-  WRITE: What it is in one sentence.
-  Then: the v1 story. An unauthenticated prompt endpoint on your
+  WRITE: what it is, in one sentence.
+
+  Then the v1 story: an unauthenticated prompt endpoint on your
   homelab, reachable by anyone, wired to an agent that executes
-  commands. That realization is the best single paragraph you have
-  and it belongs here, told plainly and briefly.
-  Then: status, including the commit gate that is still open.
-  Do not soften that line. It is the most credible sentence on the
-  page to the people you want reading it.
+  commands. That realization is the strongest paragraph you have.
+  Tell it plainly and briefly.
+
+  Then status, including the commit gate that is still open. Do not
+  soften that line. It is the most credible sentence on the page to
+  the people you want reading it.
 -->
 
 **[Projector Mapping Universe](https://github.com/Grindlewalt/Projector-Mapping-Universe)**
+
 <!--
-  WRITE: What it does physically (walls, ceilings, dragging quad
-  corners until the image lands). Then the part that is actually
-  hard: the perspective-correct warp, or the civilization sim, pick
-  ONE and give it a sentence. Both is too much for a profile README.
-  Then: status, including that the preview and the projector output
+  WRITE: what it does physically (walls and ceilings, dragging quad
+  corners until the image lands on the surface).
+
+  Then pick ONE hard thing and give it a sentence: the
+  perspective-correct warp, or the civilization sim. Both is too
+  much for a profile README.
+
+  Then status, including that the preview and the projector output
   drift apart.
 -->
 
 **[How to software](https://github.com/Grindlewalt/How-to-software)**
+
 <!--
-  WRITE: What it covers and who it's for. Then the thing that makes
-  it worth reading: you wrote it because new members were losing
-  weeks to things nobody had written down. Documentation is
-  undervalued by people your age and overvalued by people who hire,
-  so this entry punches above its weight. Say how many pages.
+  WRITE: what it covers and who it is for, with the page count.
+
+  Then why it exists: new members were losing weeks to things
+  nobody had written down. Documentation is undervalued by people
+  your age and overvalued by people who hire, so this entry punches
+  above its weight.
 -->
 
 **[BadUSB payload research](https://github.com/Grindlewalt/bad-usb-flipper-payloads)**
+
 <!--
-  WRITE THIS ONE CAREFULLY. Framing decides whether it helps or
+  WRITE THIS ONE CAREFULLY. Framing decides whether it helps you or
   hurts you.
 
-  Lead with the defender's side. What each payload leaves behind,
-  what the detection looks like. If the repo doesn't have that yet,
-  say the detection write-ups are in progress. Do not describe it
-  as a payload collection.
+  Lead with the defender's side: what each payload leaves behind,
+  what the detection looks like. If the repo does not have that
+  yet, say the detection write-ups are in progress. Do not describe
+  it as a payload collection.
 
-  Also state the boundary explicitly: own hardware, authorized
-  targets only. One clause. Anyone evaluating you for security work
-  is checking whether you know where the line is, and saying so
-  unprompted is the answer.
+  Then state the boundary in one clause: own hardware, authorized
+  engagements only. Anyone evaluating you for security work is
+  checking whether you know where the line is. Saying it unprompted
+  answers that for free.
 -->
 
 ---
@@ -140,8 +153,7 @@
 ## Currently
 
 <!--
-  A short block, three or four lines, in a format that scans fast.
-  Example shape:
+  Three or four lines in a format that scans fast:
 
     Building   ...
     Learning   ...
@@ -149,13 +161,9 @@
     Reading    ...
 
   This is the only section that dates quickly. Either commit to
-  updating it every month or two, or cut it. A "Currently" block
-  that hasn't moved in a year is worse than no block, because it
-  quietly tells people you stopped.
-
-  Candidates: the Jarvis rebuild, OWASP Top 10 for Agentic
-  Applications, the homelab stack, whatever the current FRC season
-  demands.
+  updating it every month or two, or cut it entirely. A "Currently"
+  block that has not moved in a year is worse than no block,
+  because it quietly says you stopped.
 -->
 
 ---
@@ -163,13 +171,13 @@
 ## Stack
 
 <!--
-  Group by what you use it for, not alphabetically, and only list
-  things you could be questioned on. An interviewer will pick the
-  most obscure item here and ask about it, so every line should be
-  one you want that question about.
+  Group by what you use it for, not alphabetically. Suggested
+  groupings: languages, infrastructure, AI and local inference,
+  robotics, security.
 
-  Suggested groupings: languages, infrastructure, AI/local
-  inference, robotics, security.
+  Only list things you could be questioned on. An interviewer will
+  pick the most obscure item here and ask about it, so every line
+  should be one you want that question about.
 
   Cut anything you touched once. A short honest list reads as
   confidence. A long one reads as padding, and it takes exactly one
@@ -180,16 +188,13 @@
 
 <!--
   OPTIONAL CLOSING
-  One line. What you're looking for, or how to reach you, or
-  nothing at all.
-
-  If you say you're looking for internship work, say it plainly
-  once and don't repeat it elsewhere on the page. Stated once it
-  reads as direct. Repeated it reads as anxious.
+  One line: what you are looking for, or how to reach you, or
+  nothing at all. If you say you are looking for internship work,
+  say it once and do not repeat it elsewhere on the page. Stated
+  once it reads as direct. Repeated it reads as anxious.
 
   Do NOT add: a visitor counter, a GitHub stats card, a streak
-  badge, a "profile views" badge, or a trophy display. They are
-  auto-generated, everyone has them, and they say nothing about you
-  that the contribution graph directly below this README doesn't
-  already say better.
+  badge, a profile-views badge, or a trophy display. They are
+  auto-generated, everyone has them, and the contribution graph
+  directly below this README already says it better.
 -->
