@@ -27,7 +27,7 @@
     the site works in Markdown. Send people to the site.
 -->
 
-<hr style="opacity: 0.2;">
+<hr style="opacity: 0.02;">
 
 ## About
 
