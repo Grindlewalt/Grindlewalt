@@ -27,7 +27,7 @@
     the site works in Markdown. Send people to the site.
 -->
 
-<hr style="opacity: 0.02;">
+
 
 ## About
 
@@ -50,7 +50,7 @@
     at a meetup asked what you are working on.
 -->
 
-<hr style="opacity: 0.2;">
+
 
 ## Projects
 
@@ -126,7 +126,7 @@
   answers that for free.
 -->
 
-<hr style="opacity: 0.2;">
+ 
 
 ## Currently
 
@@ -144,7 +144,7 @@
   because it quietly says you stopped.
 -->
 
-<hr style="opacity: 0.2;">
+ 
 
 ## Stack
 
