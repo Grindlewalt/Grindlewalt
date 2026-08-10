@@ -1,25 +1,3 @@
-<!--
-═══════════════════════════════════════════════════════════════
-  HOW TO USE THIS FILE
-
-  Every commented block is a prompt for you, and none of it shows
-  up when GitHub renders the page. Write your answer underneath a
-  prompt, then delete the prompt.
-
-  Goes in: github.com/Grindlewalt/Grindlewalt  ->  README.md
-  Also commit header-dark.svg and header-light.svg to that repo root.
-
-  Two rules for every section:
-  1. No em dashes. Commas, periods, or parentheses.
-  2. Nothing claims to be finished that isn't.
-
-  One warning, learned the hard way: never type the two-character
-  comment-closing sequence inside a comment. HTML comments cannot
-  nest, so it ends the block early and the rest of your prompt text
-  renders as visible page content.
-═══════════════════════════════════════════════════════════════
--->
-
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./header-dark.svg">
@@ -49,7 +27,7 @@
     the site works in Markdown. Send people to the site.
 -->
 
----
+<hr style="opacity: 0.2;">
 
 ## About
 
@@ -72,7 +50,7 @@
     at a meetup asked what you are working on.
 -->
 
----
+<hr style="opacity: 0.2;">
 
 ## Projects
 
@@ -148,7 +126,7 @@
   answers that for free.
 -->
 
----
+<hr style="opacity: 0.2;">
 
 ## Currently
 
@@ -166,7 +144,7 @@
   because it quietly says you stopped.
 -->
 
----
+<hr style="opacity: 0.2;">
 
 ## Stack
 
@@ -184,7 +162,7 @@
   question to find the gap.
 -->
 
----
+
 
 <!--
   OPTIONAL CLOSING
