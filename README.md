@@ -29,8 +29,6 @@
 
 
 
-## About
-
 <!--
   THREE TO FIVE SENTENCES. The most-read text on the page.
 
@@ -128,7 +126,6 @@
 
  
 
-## Currently
 
 <!--
   Three or four lines in a format that scans fast:
@@ -146,7 +143,6 @@
 
  
 
-## Stack
 
 <!--
   Group by what you use it for, not alphabetically. Suggested
